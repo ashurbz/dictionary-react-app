@@ -27,7 +27,7 @@ class App extends Component {
       ...this.state,
       loader:true})
     const { data } = this.state;
-    axios.post('http://localhost:5000/definition', {
+    axios.post('https://dicitionary.herokuapp.com/definition', {
           e: data
       })
       .then(({ data }) => {
